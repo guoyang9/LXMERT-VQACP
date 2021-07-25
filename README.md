@@ -37,7 +37,7 @@ wget https://nlp.cs.unc.edu/data/model_LXRT.pth -P snap/pretrained
     ```
     python src/compute_softscore.py 
     ```
-6. Fine-tuning on VQA-CP or VQA (set this on the ```src/config.py``):
+6. Fine-tuning on VQA-CP or VQA (set this on the ```src/config.py```):
     ```
     PYTHONPATH=$PYTHONPATH:./src \
     python -u src/tasks/vqa.py \
