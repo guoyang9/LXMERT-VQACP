@@ -1,8 +1,8 @@
-# LXMERT for VQA-CP and VQA. 
+# LXMERT for VQA-CP and VQA.
 
 This repo made a few modifications to support both VQA-CP and VQA datasets. Please find more details at the original LXMERT [code](https://github.com/airsplay/lxmert).
 
-We mainly use this repo to implement our paper, more details will be introduced shortly.  
+We mainly use this repo to implement our paper - Loss Re-scaling VQA: Revisiting the Language Prior Problem from a Class-imbalance View.  
 
 # Pre-trained models
 
@@ -62,4 +62,12 @@ CE              | LXMERT+Ours   |-      | -     | -         | 69.37
 </center>
 
 ## Citation
-If you found this repo useful, please cite the following paper:    
+If you found this repo useful, please cite the following paper:  
+```
+@article{rescale-vqa,
+  title={Loss Re-scaling VQA: Revisiting the Language Prior Problem from a Class-imbalance View},
+  author={Guo, Yangyang and Nie, Liqiang and Cheng, Zhiyong and Tian, Qi and Zhang, Min},
+  journal={IEEE TIP},
+  year={2021}
+}
+```  
