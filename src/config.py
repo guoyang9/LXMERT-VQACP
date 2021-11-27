@@ -6,7 +6,7 @@ in_memory   = False     # load all the image feature in memory
 use_miu     = False     # using loss re-scale or not
 
 # ----------------------before-process data paths---------------- #
-main_path       = '/disk0/jinming/test/vqa-data/'
+main_path       = '/disk0/vqa-data/'
 qa_path         = main_path + 'vqa-cp/' if cp_data else main_path
 qa_path        += version # questions and answers
 cache_root      = qa_path + '/cache/'

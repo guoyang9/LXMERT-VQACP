@@ -213,7 +213,6 @@ if __name__ == "__main__":
                                shuffle=False, drop_last=False),
                 dump=os.path.join(args.output, 'val_predict.json')
             )
-            print(result)
         else:
             assert False, "No such test option for %s" % args.test
     else:

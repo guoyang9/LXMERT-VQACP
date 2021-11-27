@@ -48,6 +48,19 @@ wget https://nlp.cs.unc.edu/data/model_LXRT.pth -P snap/pretrained
     --tqdm
     --name vqa-cp-test
     ```
+7. Evaluating on the validation set (according to the official implementation):
+    ```
+    PYTHONPATH=$PYTHONPATH:./src \
+    python -u src/tasks/vqa.py \
+    --train train --test val  \
+    --llayers 9 --xlayers 5 --rlayers 5 \
+    --loadLXMERTQA snap/pretrained/model \
+    --batchSize 32 --load output/vqa-cp-test.pth \
+    --tqdm
+    ```
+    ```
+    python acc_per_type.py output/val_predict.json
+    ```
 ## Performance on VQA-CP test
 
 <center>
