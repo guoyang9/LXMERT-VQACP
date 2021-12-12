@@ -29,13 +29,13 @@ wget https://nlp.cs.unc.edu/data/model_LXRT.pth -P snap/pretrained
     ```
 4. We convert the image features from ```tsv``` to ```h5``` first:
     ```
-    python src/detection_feature_converter.py
+    python src/tools/detection_feature_converter.py
     ```
     We fold the train and val image features together for supporting both VQA-CP and VQA.
 
 5. Process answers and question types:
     ```
-    python src/compute_softscore.py 
+    python src/tools/compute_softscore.py 
     ```
 6. Fine-tuning on VQA-CP or VQA (set this on the ```src/config.py```):
     ```
